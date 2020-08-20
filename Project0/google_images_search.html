@@ -1,0 +1,46 @@
+<!Doctype html>
+<head>
+        <title>
+                Search
+        </title>
+</head>
+<style>
+html,body{
+        height:99%;
+        width:99%;
+	font-family:sans-serif;
+}
+form{
+        position:absolute;
+        top:44%;
+        left:50%;
+        transform:translate(-50%,-50%);
+	text-align:center;
+}
+.logo{width:400px;
+        position:absolute;
+        top:150px;
+        left:50%;
+        transform:translate(-50%,0);
+}
+
+a{
+        float:right;
+        padding:5px;
+}
+.searchbar{
+        height:40px;
+        width:530px;
+        border-radius:25px;
+}
+
+</style><body>
+	<a href="google_search.html">Google Search</a>
+	<img class="logo" src="gimages_logo.jpg">
+        <form  action="https://www.google.co.in/images?tbm=isch">
+                <input class="searchbar" type="text" name="q">
+		<br>
+		<br>
+		<input type="submit" value="Search">
+        </form>
+</body> 

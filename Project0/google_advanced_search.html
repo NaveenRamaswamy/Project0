@@ -1,0 +1,68 @@
+<!Doctype html>
+<head>
+	<title>Advanced Search</title>
+</head>
+<style>
+body{
+	font-family:sans-serif;
+}
+form{display:table;}
+p{display:table-row;}
+label{display:table-cell;
+	padding:5px;
+}
+.field{display:table-cell;
+	width:600px;
+}
+div{
+	margin:10px;
+	padding:10px;
+	font-size:12px;
+}
+.titlebar{
+	width:99%;
+	border-bottom:1px solid rgb(230,230,235);	
+	padding:20px;
+	font-size:20px;
+	color:red;
+}
+a{
+	padding:5px;
+	float:right;
+}
+</style>
+<body>
+	<a href="google_search.html">Google Search</a>
+	<div class="titlebar">
+		Advanced Search
+	</div>
+	<br>
+	<div>
+		<span style="font-size:16px">Find pages with...</span>
+	<br>
+	<br>
+	<form action="https://google.com/search" method="get">
+	<p>
+	<label>all these words:</label> <input class="field"type="text" name="as_q">
+	</P>
+	<br>
+	<p>
+	<label>this exact word or phrase:</label> <input class="field" type="text" name="as_epq">
+	</p>
+	<br>
+	<p>
+	<label>any of these words:</label> <input class="field" type="text" name="as_oq">
+	</p>
+	<br>
+	<p>
+	<label>none of these words:</label> <input class="field" type="text" name="as_eq">
+	</p>
+	<br>
+	<p>
+	<label>numbers ranging from:</label> <input class="field" style="width:282px" type="number" name="as_nlo"> to <input class="field" style="width:282px" type="number" name="as_nhi">
+	</p>
+	<br>
+	<input style="position:fixed;border-radius:3px;left:680px;width:130px;font-size:12px;background-color:rgb(22,149,240);color:white;padding:5px" type="submit" value="Advanced Search">
+	</form>
+	</div>
+</body>

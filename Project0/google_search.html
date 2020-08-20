@@ -1,0 +1,47 @@
+<!Doctype html>
+<head>
+	<title>
+		Search
+	</title>
+</head>
+<style>
+html,body{
+	height:99%;
+	width:99%;
+	font-family:sans-serif;
+}
+form{
+	position:absolute;
+	top:45%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+}
+a{
+	float:right;
+	padding:5px;
+}
+.logo{width:285px;
+	position:absolute;
+	top:100px;
+	left:50%;
+	transform:translate(-50%,0);
+}
+.searchbar{
+	height:35px;
+	width:570px;
+	border-radius:25px;
+	padding:5px;
+}
+</style><body>
+	<a href="google_images_search.html">Images</a>
+	<a href="google_advanced_search.html">Advanced Search</a>
+	<img class="logo" src="google-logo.jpg">
+	<form action="https://google.com/search">
+		<input class="searchbar" type="text" name="q">
+		<br>
+		<br>
+		<input type="submit" value="Google Search">
+		<input type="submit" name="btnI" value="I'm Feeling Lucky">
+	</form>
+</body>
